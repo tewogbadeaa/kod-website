@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="/src/styles.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+    <!-- SITE TITLE -->
+    <title>h00kd - mint your experience</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div id="page" class="bg-white">
+
+        <!-- HEADER -->
+        <nav class="bg-black px-10 py-4 fixed w-screen z-10 inset-x-0 top-0 flex justify-between items-center">
+
+            <a href="#"><img src="./images/hlogo-footer.svg" alt="logo" /></a>
+
+            <button id="mobileMenuButton" class="p-3 focus:outline-none" title="Open side menu">
+                <svg id="mobileMenuButtonClose" class="w-20 h-16 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                <svg id="mobileMenuButtonOpen" class="w-20 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <div id="sideMenuHideOnMobile" class="bg-black z-10 flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0
+                                                  w-full
+                                                  px-10 
+                                                  py-8
+                                                  flex-col 
+                                                  -translate-y-full">
+                <a href="#who-we-are" class="navlink mx-0 sm:mx-2 text-2xl transition-all duration-500 py-2 sm:p-0 text-white hover:text-red text-right">wh0 we are?</a>
+                <a href="#how-it-works" class="navlink mx-0 sm:mx-2  text-2xl transition-all duration-500 py-2 sm:p-0 text-white hover:text-blue text-right">h0w it works?</a>
+                <a href="#you-hookd" class="navlink mx-0 sm:mx-2  text-2xl transition-all duration-500 py-2 sm:p-0 text-white hover:text-green text-right">you h00kd?</a>
+                <a href="#get-your-project-hookd" class="navlink mx-0 sm:mx-2  text-2xl transition-all duration-500 py-2 sm:p-0 text-white hover:text-purple text-right">get your project h00kd</a>
+                <a href="#faq" class="navlink mx-0 sm:mx-2  text-2xl transition-all duration-500 py-2 sm:p-0 text-white hover:text-yellow text-right">frequently asked questions</a>
+            </div>
+
+        </nav>
+
+
+
+        <section class="relative px-60 mt-24">
+            <div class="absolute left-0 top-0 border-b-8 border-blue">
+                <h1 class="text-black text-2xl text-right pl-60">privacy policy</h1>
+            </div>
+            <p class="text-base text-black text-left pt-28"></p>
+
+            <p class="text-base text-black text-left pt-6 pb-40"></p>
+
+        </section>
+
+        <section class="relative px-60 pt-28">
+            <div class="absolute left-0 top-0 border-b-8 border-red">
+                <h1 class="text-black text-2xl text-right pl-60">terms of service</h1>
+            </div>
+            <p class="text-base text-black text-left pt-28"></p>
+            <p class="text-base text-black text-left pt-6 pb-40"></p>
+        </section>
+
+
+
+        <footer class="w-screen bg-gradient-to-b from-black to-gray-light py-10">
+            <div class="flex flex-col md:flex-row justify-between items-center px-10">
+                <img src="./images/hlogo-footer.svg" />
+                <ul>
+                    <li class="text-white text-xs"><a>Terms of Service</a></li>
+                    <li class="text-white text-xs"><a>Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center px-10">
+                <span class="pt-8">
+                    <p class="text-white text-sm">powered by</p>
+                    <img src="./images/nearlogo.svg"/>
+                </span>
+                <div class="flex flex-row justify-between items-center">
+                    <a href="https://twitter.com/h00kdcom" target="_blank" rel="noopener noreferrer">
+                        <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0v32h32V0H0Zm25.116 12.297c.285 6.172-4.273 13.009-12.392 13.009-2.469 0-4.795-.713-6.742-1.947 2.327.285 4.653-.38 6.505-1.804-1.947-.048-3.561-1.33-4.083-3.039.664.143 1.329.095 1.946-.095-2.089-.427-3.56-2.326-3.513-4.32a4.164 4.164 0 0 0 1.994.522 4.323 4.323 0 0 1-1.33-5.84 12.357 12.357 0 0 0 8.974 4.606c-.617-2.754 1.472-5.413 4.273-5.413 1.282 0 2.421.57 3.228 1.425.997-.238 1.9-.57 2.754-1.092-.332 1.044-.997 1.899-1.9 2.421a8.63 8.63 0 0 0 2.47-.665c-.57.855-1.33 1.615-2.184 2.232Z" fill="#F8F8F8"/></svg>
+                    </a>
+                    <a href="https://medium.com/@h00kdcom" target="_blank" rel="noopener noreferrer">
+                        <svg class="m-2" width="32" height="32" fill="none" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path fill="#000" d="M0 72h72V0H0z"/>
+                              <path d="M45.186 16.487c-.722-.363-1.312.005-1.312.816v32.294l13.172 6.626c1.45.73 2.625.219 2.625-1.14V23.985c0-.13-.074-.249-.189-.307l-14.296-7.19" fill="#7F7F7F"/>
+                              <path d="m28.077 41.651 15.028-24.567c.423-.691 1.36-.96 2.081-.597l14.312 7.2a.179.179 0 0 1 .072.252L43.874 49.597l-15.797-7.946" fill="#ACADAE"/>
+                              <path d="M14.467 16.928c-1.203-.606-1.61-.158-.905.994l14.515 23.73 15.797 7.945L28.11 23.83a.228.228 0 0 0-.092-.085l-13.552-6.816" fill="#D9D9D9"/>
+                              <path d="M28.077 55.083c0 1.353-.984 1.965-2.187 1.36l-12.297-6.186c-.722-.363-1.313-1.324-1.313-2.136V17.795c0-1.082.788-1.572 1.75-1.088l13.962 7.023c.052.027.085.08.085.138v31.215" fill="#FFF"/>
+                            </g>
+                          </svg>
+                    </a>
+                    <a href="https://discord.gg/EuSjC9Uj" target="_blank" rel="noopener noreferrer">
+                        <svg width="32" height="32" viewBox="0 -28.5 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                            <path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z" fill="#5865F2"/>
+                          </svg>
+                    </a>
+                </div>
+
+            </div>
+            <p class="text-white text-xs pt-8 text-center md:text-left px-10">G4P 2022</p>
+        </footer>
+    </div>
+</body>
+<script>
+    $(document).on('click', '.accordion li', function(e) {
+        $(this).find('div').slideToggle();
+        $(this).find('svg').toggleClass('flipY');
+    });
+</script>
+<script>
+    var mobileMenuButton = document.getElementById("mobileMenuButton");
+    mobileMenuButton.onclick = function() {
+        document.getElementById("sideMenuHideOnMobile").classList.toggle("-translate-y-full");
+        document.getElementById("sideMenuHideOnMobile").classList.toggle("mt-24");
+        document.getElementById("sideMenuHideOnMobile").classList.toggle("shadow");
+        document.getElementById("mobileMenuButtonClose").classList.toggle("hidden");
+        document.getElementById("mobileMenuButtonOpen").classList.toggle("hidden");
+    }
+
+    var theElementContainer = document.getElementsByTagName("nav")[0];
+    document.addEventListener('click', function(event) {
+        if (!theElementContainer.contains(event.target)) {
+            document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-24");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
+            document.getElementById("mobileMenuButtonOpen").classList.remove("hidden");
+            document.getElementById("mobileMenuButtonClose").classList.add("hidden");
+        }
+    });
+
+    var menuLinks = document.querySelectorAll("a.navlink");
+    menuLinks.forEach((e, i) => {
+        e.addEventListener('click', () => {
+            document.getElementById("sideMenuHideOnMobile").classList.add("-translate-y-full");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("mt-24");
+            document.getElementById("sideMenuHideOnMobile").classList.remove("shadow");
+            document.getElementById("mobileMenuButtonOpen").classList.remove("hidden");
+            document.getElementById("mobileMenuButtonClose").classList.add("hidden");
+        });
+    });
+</script>
+
+</html>
