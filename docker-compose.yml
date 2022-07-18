@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  hookd:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: 'hookd'
+    container_name: hookd
+    restart: always
+    ports:
+      - 8010:80
+    networks:
+      - hookd
+
+networks:
+  hookd:
+    driver: bridge
