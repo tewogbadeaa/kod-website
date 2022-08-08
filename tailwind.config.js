@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
+    content: ["./src/*.{html,js}"],
     theme: {
         fontFamily: {
             sans: ['Space Grotesk', 'sans-serif']
@@ -19,13 +19,10 @@ module.exports = {
             'yellow': '#FBD05F',
         },
         fontSize: {
-            'xs': '1.313rem',
-            'sm': '1.75rem',
-            'base': '2.25rem',
-            'lg': '2.35rem',
-            'xl': '3rem',
-            '2xl': '5.5rem',
-            '3xl': '6rem',
+            'tiny': '0.5rem',
+            'xl': '1.375rem',
+            '2xl': '2.875rem',
+            'mh': '2rem',
         },
         extend: {},
     },
