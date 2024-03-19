@@ -22,6 +22,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
+          file: Dockerfile
           context: .
           push: true
           tags: lksa/kod:${{ github.sha }}
@@ -38,5 +39,5 @@ jobs:
             docker rm kod || true
             git pull cs shakirat-staticwebsite
             sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/kod:${{ github.sha }}
-            sudo docker run -d -p 8080:80 ${{ secrets.DOCKERHUB_USERNAME }}/kod:${{ github.sha }}
+            sudo docker run -d --name kod -p 8080:80 ${{ secrets.DOCKERHUB_USERNAME }}/kod:${{ github.sha }}
 
