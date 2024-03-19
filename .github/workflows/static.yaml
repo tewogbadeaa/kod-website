@@ -2,7 +2,7 @@ name: Shakirat Static web APP
 on:
   push:
     branches:
-      - shakirat-staticwebsite
+      - main
 
 jobs:
   build:
@@ -38,5 +38,5 @@ jobs:
             docker rm kod || true
             git pull cs shakirat-staticwebsite
             sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/kod:${{ github.sha }}
-            sudo docker run -d -p 8181:80 ${{ secrets.DOCKERHUB_USERNAME }}/kod:${{ github.sha }}
+            sudo docker run -d -p 8080:80 ${{ secrets.DOCKERHUB_USERNAME }}/kod:${{ github.sha }}
 
