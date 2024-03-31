@@ -25,7 +25,7 @@ jobs:
           file: Dockerfile
           context: .
           push: true
-          tags: compiler/kod:${{ github.sha }}
+          tags: roybylon/kod:${{ github.sha }}
 
       - name: SSH into EC2 Instance and deploy Docker container
         uses: appleboy/ssh-action@v1.0.3
