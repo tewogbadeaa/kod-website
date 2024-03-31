@@ -1,4 +1,4 @@
-name: Shakirat Static web APP
+name: Ayobami Static web APP
 on:
   push:
     branches:
@@ -25,14 +25,14 @@ jobs:
           file: Dockerfile
           context: .
           push: true
-          tags: lksa/kod:${{ github.sha }}
+          tags: compiler/kod:${{ github.sha }}
 
       - name: SSH into EC2 Instance and deploy Docker container
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.SHAKIRAT_HOST }}
-          username: ${{ secrets.SHAKIRAT_USERNAME }}
-          key: ${{ secrets.SHAKIRAT_KEY }}
+          host: ${{ secrets.COMPILER_AWS_HOST }}
+          username: ${{ secrets.COMPILER_AWS_USERNAME }}
+          key: ${{ secrets.COMPILER_AWS_KEY }}
           port: ${{ secrets.PORT }}
           script: |
             docker stop kod || true
